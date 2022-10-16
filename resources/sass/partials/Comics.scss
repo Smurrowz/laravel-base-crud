@@ -1,0 +1,95 @@
+@import './var.scss';
+
+.comics {
+  background-color: rgba(0, 0, 0, 0.899);
+  padding: 50px 0;
+  color: white;
+  font-size: 2rem;
+  position: relative;
+
+  & .current-series {
+    padding: 5px 10px;
+    background-color: $my-blue;
+    color: white;
+    font-size: 1.60rem;
+    font-weight: bold;
+    transform: translateY(-50%);
+    border: none;
+    position: absolute;
+    top: 0;
+
+  }
+  .create-comic{
+    padding: 5px 10px;
+    background-color: $my-blue;
+    color: white;
+    font-size: 1.60rem;
+    font-weight: bold;
+    transform: translateY(-50%);
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 600px;
+  }
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  position: relative;
+
+  & .load-more {
+    padding: 8px 25px;
+    color: white;
+    background-color: $my-blue;
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+  }
+
+  & .card {
+    margin-bottom: 20px;
+
+    & .card-img {
+      object-fit: cover;
+      aspect-ratio: 1;
+      object-position: top;
+    }
+
+    & .card-bottom {
+      padding-top: 5px;
+
+      & p {
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.footer-pt-1 {
+  background-color: $my-blue;
+  padding: 50px 0;
+  color: white;
+  z-index: 2;
+  position: relative;
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & a {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+
+      & img {
+        height: 60px;
+      }
+    }
+  }
+}

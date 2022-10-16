@@ -1,0 +1,8 @@
+@import './var.scss';
+  .hero{
+    height: 500px;
+    background-image:url('../img/jumbotron.jpg') ;
+    background-size: cover;
+    // z-index: 2;
+    // position: relative;
+  }

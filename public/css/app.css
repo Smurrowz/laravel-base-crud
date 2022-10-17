@@ -77,6 +77,20 @@ header .main-nav ul .nav-link.active::after, header .main-nav ul .nav-link:hover
   gap: 20px;
   position: relative;
 }
+.card-container .cont-c {
+  position: relative;
+}
+.card-container .cont-c .edit-button {
+  padding: 5px 10px;
+  background-color: #0A7CEC;
+  color: white;
+  font-size: 0.75rem;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .card-container .load-more {
   padding: 8px 25px;
   color: white;
@@ -102,6 +116,9 @@ header .main-nav ul .nav-link.active::after, header .main-nav ul .nav-link:hover
 .card-container .card .card-bottom p {
   font-size: 1rem;
   text-transform: uppercase;
+}
+.card-container .card .card-bottom .price {
+  margin-bottom: 20px;
 }
 
 .footer-pt-1 {
@@ -225,6 +242,32 @@ footer .footer-pt-3 .container .social-links ul {
   border-radius: 10px;
   color: white;
 }
+.section .edit-button {
+  padding: 10px 20px;
+  background-color: #0282f9;
+  position: absolute;
+  left: 730px;
+  bottom: 0;
+  transform: translateY(50%);
+  display: block;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+}
+.section .delete-form > .delete-button {
+  padding: 10px 20px;
+  background-color: #0282f9;
+  position: absolute;
+  left: 840px;
+  bottom: 0;
+  transform: translateY(50%);
+  display: block;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+}
 
 .details-cont {
   padding: 50px 0;
@@ -291,7 +334,7 @@ footer .footer-pt-3 .container .social-links ul {
   margin-bottom: 40px;
 }
 
-form {
+.create-form {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -299,20 +342,20 @@ form {
   padding-left: 30px;
   padding-bottom: 30px;
 }
-form input {
+.create-form input {
   height: 30px;
   min-width: 200px;
   padding: 10px 10px;
 }
-form textarea {
+.create-form textarea {
   min-width: 200px;
   padding: 10px 10px;
 }
-form label {
+.create-form label {
   font-weight: 600;
   margin-right: 20px;
 }
-form button {
+.create-form button {
   padding: 10px 40px;
   background-color: #0A7CEC;
   border: none;

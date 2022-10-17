@@ -3,6 +3,13 @@
   <div class="section">
     <img class="comic-img" src="{{$comic['thumb']}}" alt="">
     <a class="go-back" href="{{route('comics.index')}}">indietro</a>
+    <a class="edit-button" href="{{route('comics.edit',$comic)}}">edita</a>
+    <form class="delete-form" action="{{route('comics.destroy',$comic)}}" method="POST">
+        @csrf
+        @method('DELETE')
+        <input class="delete-button" type="submit" value="Elimina">
+    </form>
+    
     </div>
     <div class="details-cont">
         <div class="details-left">
